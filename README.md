@@ -1,16 +1,86 @@
-# React + Vite
+# ⏰ Stopwatch & Timer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Stopwatch & Timer application built using React.js and CSS.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Live Project](https://stopwatch-app-ten-eta.vercel.app/?utm_source=chatgpt.com)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ⏱ Stopwatch
+  - Start
+  - Pause
+  - Reset
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⏳ Timer
+  - Custom minute & second input
+  - Start
+  - Pause
+  - Reset
+
+- 🔔 Alarm sound when timer ends
+- 🎨 Modern Glassmorphism UI
+- 📱 Fully Responsive Design
+- ⚡ Fast and smooth performance
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- JavaScript
+- CSS3
+- Vite
+
+---
+
+## 📂 Folder Structure
+
+
+src
+ ┣ components
+ ┃ ┣ Stopwatch.jsx
+ ┃ ┗ Timer.jsx
+ ┣ App.jsx
+ ┣ main.jsx
+ ┗ index.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+git clone YOUR_GITHUB_REPO_LINK
+```
+
+Move to project folder:
+
+cd stopwatch-app
+```
+
+Install dependencies:
+
+npm install
+```
+
+Start development server:
+
+npm run dev
+```
+
+---
+
+## 📸 Preview
+
+Modern UI with responsive Stopwatch and Timer cards including alarm functionality.
+
+---
+
+## 👩‍💻 Author
+
+Sarika Malhotra
