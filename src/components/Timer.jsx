@@ -56,53 +56,47 @@ export default function Timer() {
   };
 
   return (
-    <div className="timer-card p-10 text-center">
-      <h2 className="text-white text-4xl font-bold mb-8">
-        ⏳ Timer
-      </h2>
+    <div className="card">
+      <h2>⏳ Timer</h2>
 
-      <div className="flex justify-center gap-4 mb-8">
+      <div className="inputs">
         <input
           type="number"
-          min="0"
           placeholder="Min"
           value={minutes}
           onChange={(e) => setMinutes(e.target.value)}
-          className="w-28 p-4 rounded-2xl bg-slate-800 border border-slate-600 text-white text-lg outline-none"
         />
 
         <input
           type="number"
-          min="0"
           placeholder="Sec"
           value={seconds}
           onChange={(e) => setSeconds(e.target.value)}
-          className="w-28 p-4 rounded-2xl bg-slate-800 border border-slate-600 text-white text-lg outline-none"
         />
       </div>
 
-      <div className="text-7xl font-mono text-lime-400 mb-10 time-text">
+      <div className="time green">
         {formatTime()}
       </div>
 
-      <div className="flex justify-center gap-4 flex-wrap">
+      <div className="buttons">
         <button
+          className="start"
           onClick={startTimer}
-          className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-2xl text-white text-lg font-semibold"
         >
           Start
         </button>
 
         <button
+          className="pause"
           onClick={() => setIsRunning(false)}
-          className="bg-gray-600 hover:bg-gray-700 px-6 py-3 rounded-2xl text-white text-lg font-semibold"
         >
           Pause
         </button>
 
         <button
+          className="reset"
           onClick={resetTimer}
-          className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-2xl text-white text-lg font-semibold"
         >
           Reset
         </button>

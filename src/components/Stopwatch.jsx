@@ -27,36 +27,34 @@ export default function Stopwatch() {
   };
 
   return (
-    <div className="timer-card p-10 text-center">
-      <h2 className="text-white text-4xl font-bold mb-8">
-        ⏱ Stopwatch
-      </h2>
+    <div className="card">
+      <h2>⏱ Stopwatch</h2>
 
-      <div className="text-7xl font-mono text-orange-400 mb-10 time-text">
+      <div className="time orange">
         {formatTime()}
       </div>
 
-      <div className="flex justify-center gap-4 flex-wrap">
+      <div className="buttons">
         <button
+          className="start"
           onClick={() => setIsRunning(true)}
-          className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-2xl text-white text-lg font-semibold"
         >
           Start
         </button>
 
         <button
+          className="pause"
           onClick={() => setIsRunning(false)}
-          className="bg-gray-600 hover:bg-gray-700 px-6 py-3 rounded-2xl text-white text-lg font-semibold"
         >
           Pause
         </button>
 
         <button
+          className="reset"
           onClick={() => {
             setIsRunning(false);
             setSeconds(0);
           }}
-          className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-2xl text-white text-lg font-semibold"
         >
           Reset
         </button>
